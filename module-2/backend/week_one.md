@@ -8,8 +8,10 @@ Note: When you're done, submit a PR.
 GET - Sends a page and can be used to input information.
 POST - Recieves information from user.
 PUT - Used to update information.
+PATCH - Also used to updatea information.
 DELETE - Used to delete information.
 2. What is Sinatra?
+Sinatra is a framework that facilitates buildding webpages.
 4. What is MVC?
 Model, View, Controller
 5. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
@@ -51,9 +53,22 @@ Object relational mapping.
 16. What's the most commonly used ORM?
 SQL.
 17. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
+get '/restaurants'
+get '/restaurants/:id'
+get '/restaurants/:id/edit'
+get '/restaurants/new'
+Delete '/restaurants/:id'
+Put '/restaurants/:id'
+Post '/resturants'
 
 18. What's a migration? 
+Migration makes the schema.
 19. When you create a migration, does it automatically modify your database?
+Yes, it sets up the database to recieve information.
 20. How does a model relate to a database?
+A model houses the classes through which the database can be accessed, i.e. Trip class has trips database.  The classes also contain analysis, relations, and validations.
 21. What's the difference between agile workflow and waterfall method?
+The Waterfall method is doing each step once (i.e . plan, test, execute) and then hoping that the final product works how you want it to.
+Tee Agile method is all about planing, testing, and executing in small chunks and then doing it again many times while contanstly making minor adjustments to your course each time.
 22. What is the difference between `#new` and `#create`?
+When we use new it doesn't save the info into our database, create does.
