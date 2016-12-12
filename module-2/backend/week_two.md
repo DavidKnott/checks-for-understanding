@@ -21,8 +21,7 @@ Create makes a new instances and saves it.
 It allows us to send http requests form our terminal.
 7. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 Assuming we're talking about elementary school, they will have a has_many and belongs_to relationship.
-file:///Users/Knott/Downloads/Relationship.pdf
-![Alt text](/Users/Knott/Downloads/Relationship.pdf?raw=true "Optional Title")
+![Alt text](file:///Users/Knott/Downloads/Relationship.pdf?raw=true "Optional Title")
 8. Define foreign key, primary key, and schema.
 9. Describe the relationship between a foreign key on one table and a primary key on another table.
 10. What are the parts of an HTTP response?
