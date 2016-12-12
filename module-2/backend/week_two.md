@@ -5,12 +5,23 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR. 
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+ActiveRecord seperates the user from sql allowing them to work with sql databases in a more user friendly and readable manner.
 2. What kind of methods are `belongs_to`, and `has_many`? (i.e. class or instance) Give an example.
+They are class methods because every instance of the class will have the same relationships.
+For example all teacher instances will have a has_many relationship with classes and all classes will have a belongs_to relationship with a single teacher.
 3. What do they allow you to do?
+They allow us to combin database information allowing for more abstract connections and analysis to be made.
 4. What's the difference between agile workflow and waterfall method?
+Agile is working through planning, testing and executing in small iterations and changing your course as you go.
+Waterfall is trying to do each step (planning, testing and executing, etc) at once.
 5. What is the difference between `#new` and `#create`?
+New only makes a new instance but doesnt save it.
+Create makes a new instances and saves it.
 6. At a basic level, what does cURL allow you to do?
+It allows us to send http requests form our terminal.
 7. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
+Assuming we're talking about elementary school, they will have a has_many and belongs_to relationship.
+
 8. Define foreign key, primary key, and schema.
 9. Describe the relationship between a foreign key on one table and a primary key on another table.
 10. What are the parts of an HTTP response?
