@@ -21,23 +21,36 @@ Create makes a new instances and saves it.
 It allows us to send http requests form our terminal.
 7. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 Assuming we're talking about elementary school, they will have a has_many and belongs_to relationship.
+I tried to add a photo for a long time and I couldn't figure out how so I'm going to slack it to you.
 
 8. Define foreign key, primary key, and schema.
+A foreign key connects the belongs_to with the has_many, in our example it is an attribute of the students table.
+A primary key connects the has_many with the belongs_to, in our example it is an attribute of the teachers table.
+A schema is the blueprint for a database.
 9. Describe the relationship between a foreign key on one table and a primary key on another table.
+Foreign keys linke the belongs_to to the primary key on the has_many.
 10. What are the parts of an HTTP response?
+Response Header and Response Body.
 11. Describe some techniques to make our Sinatra code more DRY. Give an example of when you would use these techniques.
+Never call classes in the views, and make sure to pass everything through the controller so that each part of your Sinatra code is as independent as possible.
 
 
 ### Optional Questions
 
 1. Name your five favorite ActiveRecord methods (i.e. methods your models inherit from ActiveRecord) and describe what they do.
+Where, group, joins, includes, count.
 2. Name your three favorite ActiveRecord rake tasks and describe what they do.
 4. What can you expect from a group as you begin working together? As you continue working together?
+I can expect the expectations to be clearly established and as we continue to work together we can continuously refine them.
 5. What two columns does `t.timestamps null: false` create in our database?
+Created_at and updated_at.
 6. What cURL flag can you use to send a `POST` request?
 7. What case does JSON (and JavaScript) use for multi-word variables?
+Camel case.
 8. What case does Ruby use for multi-word variables?
+Snake case.
 9. In a database that's holding schools and teachers, what will be the relationship between schools and teachers?
+One to many.
 10. In the same database, what will you need to do to create this relationship (draw a schema diagram)?
 11. Give an example of when you might want to store information besides ids on a join table.
 12. Describe and diagram the relationship between patients and doctors.
