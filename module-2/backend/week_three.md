@@ -52,6 +52,7 @@ Form_for knows where to submit the users input by looking at where the request t
 11. Create a form using a `form_for` helper to create a new `Horse`.
 <br>
 <%= form_for @horse do |f| %>
+  <br>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <br>
